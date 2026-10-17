@@ -1,0 +1,10 @@
+﻿Rank,Model,Avg Acc,Avg F1,Avg AUC,Best F1,Best FS
+1,Logistic Regression,0.6415,0.7137,0.6721,0.7519,Market only
+2,LDA,0.6303,0.7088,0.6648,0.7458,Market only
+3,Linear SVM,0.6027,0.707,0.6562,0.7371,Market only
+4,AdaBoost,0.5957,0.7012,0.6392,0.7149,Market only
+5,Random Forest,0.5775,0.6973,0.6251,0.7141,Market only
+6,XGBoost,0.6037,0.6689,0.6444,0.7112,Market only
+7,KNN,0.5594,0.6668,0.5757,0.6877,Market only
+8,MLP,0.5927,0.6277,0.6209,0.6848,Market only
+9,Decision Tree,0.5761,0.6428,0.5923,0.6702,Market only

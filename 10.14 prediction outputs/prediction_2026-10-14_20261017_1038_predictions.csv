@@ -1,0 +1,10 @@
+﻿Model,Feature Set,Window,Threshold,N_train,P(up),Predicted Direction,Actual Direction,Result
+Decision Tree,Market only,60,0.35,61,1.0,Up,Up,Hit
+KNN,Market only,120,0.45,121,1.0,Up,Up,Hit
+XGBoost,Market only,120,0.35,121,0.9917733073234558,Up,Up,Hit
+Logistic Regression,Market only,150,0.45,151,0.9771372797311983,Up,Up,Hit
+LDA,Market only,120,0.45,121,0.9276712113268949,Up,Up,Hit
+MLP,Market only,150,0.35,151,0.8925083082319623,Up,Up,Hit
+Random Forest,Market + On-chain,120,0.5,121,0.8922931812779452,Up,Up,Hit
+Linear SVM,Market only,150,0.45,151,0.805533511694587,Up,Up,Hit
+AdaBoost,Market only,150,0.45,151,0.6926365768633895,Up,Up,Hit

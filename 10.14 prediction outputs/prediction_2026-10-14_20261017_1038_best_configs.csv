@@ -1,0 +1,10 @@
+﻿Model,Feature Set,Window,Threshold,Accuracy,F1,ROC-AUC
+AdaBoost,Market only,150,0.45,0.82,0.8397,0.906
+Decision Tree,Market only,60,0.35,0.7984,0.8093,0.8347
+KNN,Market only,120,0.45,0.7946,0.8059,0.8623
+LDA,Market only,120,0.45,0.7924,0.8039,0.8538
+Linear SVM,Market only,150,0.45,0.8125,0.8277,0.9021
+Logistic Regression,Market only,150,0.45,0.832,0.8401,0.9077
+MLP,Market only,150,0.35,0.8155,0.8254,0.8869
+Random Forest,Market + On-chain,120,0.5,0.8559,0.8604,0.927
+XGBoost,Market only,120,0.35,0.8417,0.8517,0.9125

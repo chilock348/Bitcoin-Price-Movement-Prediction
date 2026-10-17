@@ -1,0 +1,4 @@
+﻿Feature Set,Models,Avg Acc,Avg F1,Avg AUC,Max F1
+Market + On-chain,9,0.8023,0.8171,0.8687,0.8604
+Market only,9,0.8179,0.8293,0.8882,0.8596
+On-chain only,9,0.5074,0.6383,0.4852,0.6789

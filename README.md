@@ -1,13 +1,13 @@
+
 # Predicting Bitcoin Price Direction
 
 ### Model comparison and feature extension with market and on-chain data
 
-**MH6805 Machine Learning in Finance · Group 7**  
-Zhou Yan · Chen Xixi · Chen Liuchi
+**MH6805 Machine Learning in Finance | Group B7**
 
 How do model choice and input features affect Bitcoin price-direction classification? This project follows an experimental progression: establish a baseline, add information from other cryptocurrencies, and examine whether on-chain indicators contribute further value.
 
-[Research design](#research-design) · [Results](#results) · [Repository guide](#repository-guide) · [Running the notebooks](#running-the-notebooks) · [Data sources](#data-sources)
+[Research design](#research-design) | [Results](#results) | [Repository guide](#repository-guide) | [Running the notebooks](#running-the-notebooks) | [Data sources](#data-sources)
 
 ## Research design
 
@@ -15,8 +15,8 @@ The task is binary classification of Bitcoin's recorded daily price direction. F
 
 | Stage | Question | Market features | On-chain features | Notebook |
 | :--- | :--- | :--- | :--- | :--- |
-| **V1 · Baseline** | How do the models perform with Bitcoin and traditional-market information? | 14 Bitcoin-specific and traditional-market features | 8 | [V1.ipynb](V1.ipynb) |
-| **V2 · Feature extension** | How do results change after adding other cryptocurrency returns? | 22 features: V1 market features plus returns of 8 other cryptocurrencies | 8 | [V2.ipynb](V2.ipynb) |
+| **V1: Baseline** | How do the models perform with Bitcoin and traditional-market information? | 14 Bitcoin-specific and traditional-market features | 8 | [V1.ipynb](V1.ipynb) |
+| **V2: Feature extension** | How do results change after adding other cryptocurrency returns? | 22 features: V1 market features plus returns of 8 other cryptocurrencies | 8 | [V2.ipynb](V2.ipynb) |
 | **Recent case** | Can the workflow be applied to an updated dataset? | Each model's selected V2 feature configuration | Where selected | Final case-study cells in [V2.ipynb](V2.ipynb) |
 
 Both historical experiments compare **market-only**, **on-chain-only**, and **market + on-chain** configurations. V2 adds daily returns of **ETH, BNB, XRP, BCH, LTC, ADA, LINK, and DOGE**.
@@ -31,7 +31,7 @@ Nine classifiers are included: KNN, Logistic Regression, Linear Discriminant Ana
 | Complete modelling observations | 2,063 after feature construction and predictor lagging |
 | Rolling evaluation | 1 January 2020–31 August 2023; 1,339 prediction dates in the reported selected configurations |
 | Rolling-window parameter | 7, 15, 30, 45, 60, 90, 120, or 150 calendar days |
-| Decision thresholds | 0.30, 0.35, 0.40, 0.45, 0.50, or 0.55 |
+| Decision thresholds | 0.30, 0.35, 0.40, 0.45, 0.50, 0.55 |
 | Configuration selection | Highest F1 for each model and feature set |
 | Reported metrics | Accuracy, F1, and ROC-AUC |
 
@@ -49,7 +49,7 @@ The table below averages the F1-selected configurations across the nine models. 
 | Market + on-chain | 63.07% | 80.23% | 0.6927 | 0.8171 | 0.6839 | 0.8687 |
 | On-chain only | 50.72% | 50.74% | 0.6390 | 0.6383 | 0.4859 | 0.4852 |
 
-Source tables: [V1 feature-set summary](V1%20output/model_performance_summary_20261017_1726_by_feature.csv) · [V2 feature-set summary](V2%20output/model_performance_summary_20261017_1147_by_feature.csv)
+Source tables: [V1 feature-set summary](V1%20output/model_performance_summary_20261017_1726_by_feature.csv) | [V2 feature-set summary](V2%20output/model_performance_summary_20261017_1147_by_feature.csv)
 
 - **V1:** Logistic Regression ranks first by selected F1 (**0.7519**), followed by LDA and Linear SVM. All nine models select market-only features for their best F1.
 - **V2:** Random Forest ranks first (**F1 0.8604; accuracy 85.59%; ROC-AUC 0.9270**) with combined features. XGBoost and Logistic Regression follow.
@@ -59,11 +59,11 @@ These observations motivate the project's central discussion: richer inputs can 
 
 ### Compare the experiments visually
 
-**V1 · Bitcoin-specific and traditional-market features**
+**V1: Bitcoin-specific and traditional-market features**
 
 ![V1 ROC-AUC comparison across nine models and three feature configurations](V1%20output/auc_bar.png)
 
-**V2 · Additional cross-cryptocurrency returns**
+**V2: Additional cross-cryptocurrency returns**
 
 ![V2 ROC-AUC comparison across nine models and three feature configurations](V2%20output/auc_bar.png)
 
@@ -127,8 +127,3 @@ The historical worksheet is **`base_v3`**; the recent-case worksheet is **`today
 - [Binance Spot API — Kline/candlestick data](https://developers.binance.com/docs/binance-spot-api-docs/rest-api/market-data-endpoints#klinecandlestick-data): completed UTC cryptocurrency candles used to supplement selected missing observations.
 
 The workbooks are project-prepared inputs combining these sources; they are not unmodified provider downloads. Attribution and source context are documented in the [data guide](dataset/README.md).
-
-## Project team
-
-**Zhou Yan · Chen Xixi · Chen Liuchi**  
-MH6805 Machine Learning in Finance · Group 7

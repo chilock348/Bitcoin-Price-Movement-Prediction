@@ -1,0 +1,11 @@
+# Packages inferred from notebook imports and Excel I/O.
+# Versions were not recorded; this is not a lockfile for the original run.
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+xgboost
+openpyxl
+ipython
+jupyterlab

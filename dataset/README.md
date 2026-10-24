@@ -31,10 +31,6 @@ Traditional-market features use the workbook's forward-filled closing-price colu
 - **Other asset prices:** [Yahoo Finance](https://finance.yahoo.com/).
 - **Selected missing cryptocurrency observations:** completed UTC daily candles from [Binance USDT trading pairs](https://developers.binance.com/docs/binance-spot-api-docs/rest-api/market-data-endpoints#klinecandlestick-data).
 
-Suggested reference for the downloaded Kaggle dataset:
-
-> aleexharris. (n.d.). *Bitcoin network on-chain blockchain data* [Data set]. Kaggle. https://www.kaggle.com/datasets/aleexharris/bitcoin-network-on-chain-blockchain-data
-
 ## Using the files
 
 The current notebooks expect these filenames in their working directory. Copy the relevant workbook beside a local working copy of the notebook, following the [run instructions](../README.md#running-the-notebooks).

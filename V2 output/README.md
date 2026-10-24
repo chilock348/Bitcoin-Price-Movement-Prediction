@@ -1,6 +1,6 @@
-# V2 results · Cross-cryptocurrency feature extension
+# V2 results: Cross-cryptocurrency feature extension
 
-[Back to the project overview](../README.md) · [Open V2 notebook](../V2.ipynb) · [Compare V1 results](../V1%20output/README.md)
+[Back to the project overview](../README.md) | [Open V2 notebook](../V2.ipynb) | [Compare V1 results](../V1%20output/README.md)
 
 V2 adds returns of **ETH, BNB, XRP, BCH, LTC, ADA, LINK, and DOGE**, increasing the market block from **14 to 22 features**. The on-chain block retains its **8 indicators**. The same three feature configurations and nine model families are considered.
 
@@ -24,7 +24,7 @@ Random Forest ranks first by selected F1 (**0.8604**) with combined features. Ei
 | Exploratory feature importance and target correlation | [feature_importance_ranking.png](feature_importance_ranking.png) |
 | Feature correlations | [correlation_heatmap.png](correlation_heatmap.png) |
 | Accuracy by month | [accuracy_all_models_single_plot.png](accuracy_all_models_single_plot.png) |
-| Monthly accuracy heatmaps | [model_best_accuracy_heatmap.png](model_best_accuracy_heatmap.png) · [model_best_accuracy_heatmap_v2.png](model_best_accuracy_heatmap_v2.png) |
+| Monthly accuracy heatmaps | [model_best_accuracy_heatmap.png](model_best_accuracy_heatmap.png); [model_best_accuracy_heatmap_v2.png](model_best_accuracy_heatmap_v2.png) |
 | F1 versus threshold at each model's selected window | [bestwindow_f1_vs_threshold.png](bestwindow_f1_vs_threshold.png) |
 | Threshold sensitivity | [threshold_sensitivity_F1.png](threshold_sensitivity_F1.png) |
 | Window sensitivity | [window_sensitivity_F1.png](window_sensitivity_F1.png) |

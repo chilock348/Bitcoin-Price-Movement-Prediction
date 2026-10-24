@@ -1,6 +1,7 @@
-# Recent retrospective case · 14 October 2026
 
-[Back to the project overview](../README.md) · [Open V2 notebook](../V2.ipynb)
+# Recent retrospective case: 14 October 2026
+
+[Back to the project overview](../README.md) | [Open V2 notebook](../V2.ipynb)
 
 The final case-study cells in V2 retrain each model using its historically selected feature set, window parameter, and threshold, then classify the recorded Bitcoin price direction for **14 October 2026**. These exports were generated on **17 October 2026 at 10:38**.
 

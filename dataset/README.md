@@ -1,3 +1,4 @@
+
 # Data guide
 
 [Back to the project overview](../README.md)
@@ -19,7 +20,7 @@ The main historical rolling evaluation covers **1 January 2020–31 August 2023*
 | :--- | :--- |
 | Bitcoin-specific market features | One-day return, seven-day sum of returns, seven-day return volatility, log change in exchange volume, and market-capitalisation return |
 | Traditional markets | Returns derived from S&P 100, S&P 500, Nasdaq 100, Dow Jones, Russell 2000, VIX, US Dollar Index, US 10-Year Treasury Yield Index, and gold futures |
-| Other cryptocurrencies · V2 | Returns of ETH, BNB, XRP, BCH, LTC, ADA, LINK, and DOGE |
+| Other cryptocurrencies (V2) | Returns of ETH, BNB, XRP, BCH, LTC, ADA, LINK, and DOGE |
 | On-chain indicators | Mempool size, transaction rate, average block size, average confirmation time, hash rate, difficulty, miners' revenue in USD, and total transaction fees in BTC |
 
 Traditional-market features use the workbook's forward-filled closing-price columns to align with calendar-day crypto observations. Predictor columns are shifted by one row in the modelling notebooks.
